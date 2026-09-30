@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+}
+
+*, ::before, ::after {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400;
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: 'Poppins', sans-serif !important;
+  }
+}
+
+.font-heading {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+.font-cta {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 900 !important;
+}
+
+.font-price {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.font-desc {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.section-block {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f8f5ee;
+}
+
+.section-block h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 640px) {
+  .section-block h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-block h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.carousel-shell {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.sample-slide {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  width: 82%;
+}
+
+@media (min-width: 640px) {
+  .sample-slide {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sample-slide {
+    width: 48%;
+  }
+}
+
+.sample-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background-color: #cbd5e1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dot-active {
+  width: 2rem;
+  background-color: #ea880f;
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "+100 Projetos de Bretes",
+  "description": "Página de vendas oficial de +100 Projetos Profissionais de Bretes para Gado com plantas baixas, memorial descritivo, lista de materiais e bônus exclusivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

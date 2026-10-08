@@ -1,4 +1,5 @@
 import React from 'react';
+import { getCheckoutUrl } from '../lib/utils';
 
 interface PricingSectionProps {
   onSelectPlan: (planName: string) => void;
@@ -63,13 +64,16 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
               </div>
 
               <div className="pt-2 text-center border-t border-slate-100">
-                <button
-                  type="button"
-                  onClick={() => onSelectPlan('Plano Básico')}
-                  className="w-full py-3.5 px-6 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 text-black font-cta text-base sm:text-lg font-bold uppercase transition-all duration-200 cursor-pointer inline-block text-center"
+                <a
+                  href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/NFSCJU5doU0tfoJbIDdr')}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onSelectPlan('Plano Básico');
+                  }}
+                  className="w-full py-3.5 px-6 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 text-black font-cta text-base sm:text-lg font-bold uppercase transition-all duration-200 cursor-pointer inline-block text-center no-underline"
                 >
                   QUERO O BÁSICO
-                </button>
+                </a>
               </div>
 
             </article>
@@ -159,13 +163,16 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
               </div>
 
               <div className="pt-2 text-center border-t border-amber-100">
-                <button
-                  type="button"
-                  onClick={() => onSelectPlan('Plano Completo')}
-                  className="w-full py-4 px-6 rounded-lg bg-[#ea880f] hover:bg-[#d87c0a] text-white font-cta text-base uppercase shadow-md shadow-amber-600/30 transform hover:-translate-y-0.5 transition-all duration-200 cursor-pointer inline-block text-center"
+                <a
+                  href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/B2Kr2Sjc1espfcJDNd37')}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onSelectPlan('Plano Completo');
+                  }}
+                  className="w-full py-4 px-6 rounded-lg bg-[#ea880f] hover:bg-[#d87c0a] text-white font-cta text-base uppercase shadow-md shadow-amber-600/30 transform hover:-translate-y-0.5 transition-all duration-200 cursor-pointer inline-block text-center no-underline"
                 >
                   QUERO O COMPLETO
-                </button>
+                </a>
               </div>
 
             </article>

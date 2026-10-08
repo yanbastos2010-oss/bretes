@@ -10,6 +10,7 @@ import { GuaranteeSection } from './components/GuaranteeSection';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
 import { DiscountModal } from './components/DiscountModal';
+import { redirectToCheckout } from './lib/utils';
 
 export default function App() {
   const [isDiscountOpen, setIsDiscountOpen] = useState(false);
@@ -24,6 +25,8 @@ export default function App() {
   const handleSelectPlan = (planName: string) => {
     if (planName === 'Plano Básico') {
       setIsDiscountOpen(true);
+    } else {
+      redirectToCheckout('https://ggcheckout.app/checkout/v5/B2Kr2Sjc1espfcJDNd37');
     }
   };
 

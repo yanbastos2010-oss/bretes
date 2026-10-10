@@ -2,24 +2,24 @@ import React, { useState, useRef } from 'react';
 
 const sampleImages = [
   {
-    src: "https://i.ibb.co/5ghw1Fwz/100-Projetos-Profissionais-de-Viveiros-para-Aves-2.webp",
-    alt: "Prévia 1 dos projetos profissionais de viveiros para aves"
+    src: "/01-modulo-1-bretes-simples-e-economicos.png",
+    alt: "01 - Módulo 1: Bretes Simples e Econômicos"
   },
   {
-    src: "https://i.ibb.co/sdkBrxhG/100-Projetos-Profissionais-de-Viveiros-para-Aves-4.webp",
-    alt: "Prévia 2 dos projetos profissionais de viveiros para aves"
+    src: "/02-modulo-2-bretes-com-tronco-de-contencao.png",
+    alt: "02 - Módulo 2: Bretes com Tronco de Contenção"
   },
   {
-    src: "https://i.ibb.co/tPhs2BSY/100-Projetos-Profissionais-de-Viveiros-para-Aves.webp",
-    alt: "Prévia 3 dos projetos profissionais de viveiros para aves"
+    src: "/03-modulo-3-vacinacao-e-manejo-sanitario.png",
+    alt: "03 - Módulo 3: Vacinação e Manejo Sanitário"
   },
   {
-    src: "https://i.ibb.co/5h3XmWCT/100-Projetos-Profissionais-de-Viveiros-para-Aves-1.webp",
-    alt: "Prévia 4 dos projetos profissionais de viveiros para aves"
+    src: "/04-modulo-4-apartacao-e-embarque.png",
+    alt: "04 - Módulo 4: Apartação e Embarque"
   },
   {
-    src: "https://i.ibb.co/xrk0J2W/100-Projetos-Profissionais-de-Viveiros-para-Aves-3.webp",
-    alt: "Prévia 5 dos projetos profissionais de viveiros para aves"
+    src: "/05-modulo-5-bretes-completos-de-manejo.png",
+    alt: "05 - Módulo 5: Bretes Completos de Manejo"
   }
 ];
 
@@ -67,12 +67,11 @@ export const MaterialSample: React.FC = () => {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  width="1414"
-                  height="2000"
+                  width="360"
+                  height="640"
                   loading={idx === 0 ? "eager" : "lazy"}
                   fetchPriority={idx === 0 ? "auto" : "low"}
                   decoding="async"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             ))}

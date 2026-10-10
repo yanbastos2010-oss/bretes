@@ -2,23 +2,23 @@ import React, { useState, useRef } from 'react';
 
 const sampleImages = [
   {
-    src: "/01-modulo-1-bretes-simples-e-economicos.png",
+    src: "/01-modulo-1-bretes-simples-e-economicos.webp",
     alt: "01 - Módulo 1: Bretes Simples e Econômicos"
   },
   {
-    src: "/02-modulo-2-bretes-com-tronco-de-contencao.png",
+    src: "/02-modulo-2-bretes-com-tronco-de-contencao.webp",
     alt: "02 - Módulo 2: Bretes com Tronco de Contenção"
   },
   {
-    src: "/03-modulo-3-vacinacao-e-manejo-sanitario.png",
+    src: "/03-modulo-3-vacinacao-e-manejo-sanitario.webp",
     alt: "03 - Módulo 3: Vacinação e Manejo Sanitário"
   },
   {
-    src: "/04-modulo-4-apartacao-e-embarque.png",
+    src: "/04-modulo-4-apartacao-e-embarque.webp",
     alt: "04 - Módulo 4: Apartação e Embarque"
   },
   {
-    src: "/05-modulo-5-bretes-completos-de-manejo.png",
+    src: "/05-modulo-5-bretes-completos-de-manejo.webp",
     alt: "05 - Módulo 5: Bretes Completos de Manejo"
   }
 ];
@@ -67,8 +67,8 @@ export const MaterialSample: React.FC = () => {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  width="360"
-                  height="640"
+                  width="941"
+                  height="1672"
                   loading={idx === 0 ? "eager" : "lazy"}
                   fetchPriority={idx === 0 ? "auto" : "low"}
                   decoding="async"

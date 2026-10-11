@@ -1,6 +1,6 @@
 import React from 'react';
 import { X } from 'lucide-react';
-import { getCheckoutUrl } from '../lib/utils';
+import { getCheckoutUrl, trackAndRedirectToCheckout } from '../lib/utils';
 
 interface DiscountModalProps {
   isOpen: boolean;
@@ -67,12 +67,22 @@ export const DiscountModal: React.FC<DiscountModalProps> = ({
         <div className="space-y-2">
           <a
             href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/iVWBkUbItp5ayAySkoCP')}
+            data-cashflow="1"
+            onClick={(e) => {
+              e.preventDefault();
+              trackAndRedirectToCheckout('https://ggcheckout.app/checkout/v5/iVWBkUbItp5ayAySkoCP');
+            }}
             className="w-full py-3 px-3 bg-[#ea880f] hover:bg-[#d87c0a] text-white font-poppins font-black text-sm sm:text-base tracking-tight uppercase rounded-xl shadow-md shadow-amber-600/25 transition transform hover:-translate-y-0.5 cursor-pointer leading-tight inline-block text-center no-underline"
           >
             QUERO O COMPLETO COM DESCONTO
           </a>
           <a
             href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/NFSCJU5doU0tfoJbIDdr')}
+            data-cashflow="1"
+            onClick={(e) => {
+              e.preventDefault();
+              trackAndRedirectToCheckout('https://ggcheckout.app/checkout/v5/NFSCJU5doU0tfoJbIDdr');
+            }}
             className="w-full py-2.5 px-4 bg-white hover:bg-slate-50 text-slate-600 font-poppins font-bold text-xs uppercase border border-slate-200 rounded-xl transition cursor-pointer inline-block text-center no-underline"
           >
             NÃO, QUERO FICAR COM O BÁSICO

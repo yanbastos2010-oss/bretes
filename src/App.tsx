@@ -26,7 +26,7 @@ export default function App() {
     if (planName === 'Plano Básico') {
       setIsDiscountOpen(true);
     } else {
-      redirectToCheckout('https://ggcheckout.app/checkout/v5/B2Kr2Sjc1espfcJDNd37');
+      redirectToCheckout('https://ggcheckout.app/checkout/embed/YusjK9VJTeaDg5VbOWaqlJ');
     }
   };
 

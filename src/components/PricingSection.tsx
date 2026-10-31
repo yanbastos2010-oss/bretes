@@ -66,7 +66,6 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
               <div className="pt-2 text-center border-t border-slate-100">
                 <a
                   href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/NFSCJU5doU0tfoJbIDdr')}
-                  data-cashflow="1"
                   onClick={(e) => {
                     e.preventDefault();
                     onSelectPlan('Plano Básico');
@@ -165,8 +164,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
 
               <div className="pt-2 text-center border-t border-amber-100">
                 <a
-                  href={getCheckoutUrl('https://ggcheckout.app/checkout/v5/B2Kr2Sjc1espfcJDNd37')}
-                  data-cashflow="1"
+                  href={getCheckoutUrl('https://ggcheckout.app/checkout/embed/YusjK9VJTeaDg5VbOWaqlJ')}
                   onClick={(e) => {
                     e.preventDefault();
                     onSelectPlan('Plano Completo');
